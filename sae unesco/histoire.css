@@ -1,0 +1,421 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bandeau {
+  top: 0;
+  max-height: 20%;
+  display: flex;
+  flex-direction: column;
+ 
+  padding-top: 0px;
+  background-size: cover;
+  padding-bottom: 30cap;
+  background-image: url('fond.jpg');
+  background-position: center;
+
+  
+}
+.flag{
+float: right;
+top:0;
+justify-content: right;
+padding-right: 10px;
+}
+
+.espace {
+display: flex;
+justify-content: space-between;
+}
+.msc {
+
+  display: flex;
+  top:0;
+  justify-content: left;
+
+}
+h1.florence {
+  max-height: 20%;
+  text-align: center;
+  font-size: 120px;
+ font-family: 'Abhaya Libre', serif;
+}
+
+.itemm {
+  width: 420px;
+  height: 300px;
+  position: relative;
+  left: 70px;
+}
+
+
+/* barre de navigation */
+
+  
+.menu {
+  background-color: #f0c300;
+  border-bottom: 4px solid #12110a;
+  border-top: 4px solid #050502;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border: 4px red;
+}
+
+.menu-list li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color:black;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+  .menu-list a:hover {
+    background-color:#DAB30A ;
+    
+  }
+
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0c300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .menu-list li:hover .submenu {
+    display: block; 
+  }
+  
+  .submenu li {
+    border-bottom: 1px solid red;
+  }
+    .submenu a {
+        padding: 10px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      
+      .submenu a:hover {
+        background-color: #777;
+      }
+
+      
+/* fin de la barre de navigation*/
+
+.titre {
+    margin: 0;
+    font-size: 34px;
+    line-height: 2;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+p.img-desc {
+    margin: 0;
+    font-size: 34px;
+    line-height: 2;
+}
+
+/* Frise chronologique*/
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #006E51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: -3.3%;
+}
+
+.container.right {
+  left: 49.8%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.left::after {
+  right: 0px;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006E51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -125px;
+}
+
+.container.right .date {
+  left: -160px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #F6D155;
+  border: 2px solid #006E51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006E51;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 100px 30px 80px;
+  background: #F6D155;
+  position: relative;
+  border-radius: 0 100px 100px 0;
+}
+
+.container.right .content {
+  padding: 30px 100px 30px 80px;
+  border-radius: 100px 0 0 100px;
+}
+
+
+.container .content h2{
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+  font-weight: bold;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+h3, li{
+  color: #000000;
+}
+
+.liste {
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  height: auto;
+  display: flex;
+  background-color: #CEB14A ;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur un petit écran */
+  position: absolute;
+}
+
+/*fleche pour remonter */
+.fleche-remonter {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #f0c300;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fleche-remonter:hover {
+    background-color: #DAB30A;
+}
+
+/* Affiche la flèche uniquement lorsqu'il y a du défilement */
+body {
+    scroll-behavior: smooth;
+}
+
+body:hover .fleche-remonter,
+body:focus .fleche-remonter {
+    display: block;
+}
+
+
+
+
+
+div.vertical{
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+div.horizontal{
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center;
+ 
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 20px;
+  }
+
+
+  .flex-item {
+    max-width: 25%; /* Chaque élément occupe 25% de l'espace */
+    margin-bottom: 20px; /* Espace entre les éléments */
+    box-sizing: border-box;
+  }
+
+ .listplate {
+  display: flex;
+  justify-content: space-between; 
+ }
+
+
+ .horizontal a {
+  position: relative;
+  margin-right: 30px;
+  justify-content: space-between; 
+}

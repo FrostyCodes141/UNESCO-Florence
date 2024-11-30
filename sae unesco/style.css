@@ -1,0 +1,292 @@
+body, html {
+    max-height: 100%;
+    margin: 0;
+}
+
+.bandeau {
+    top: 0;
+    max-height: 20%;
+    display: flex;
+    flex-direction: column;
+   
+    padding-top: 0px;
+    background-size: cover;
+    padding-bottom: 30cap;
+    background-image: url('fond.jpg');
+    background-position: center;
+ 
+    
+}
+.flag{
+ float: right;
+  top:0;
+  justify-content: right;
+  padding-right: 10px;
+}
+
+.espace {
+  display: flex;
+  justify-content: space-between;
+}
+.msc {
+
+  display: flex;
+  top:0;
+  justify-content: left;
+
+}
+
+h1.florence {
+  height: auto; /* Utiliser la hauteur automatique pour éviter le chevauchement */
+  max-height: 200px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  text-align: center;
+  font-size: 120px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+/* barre de navigation */
+
+  
+.menu {
+  background-color: #f0c300;
+  border-bottom: 4px solid #12110a;
+  border-top: 4px solid #050502;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border: 4px red;
+}
+
+.menu-list li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color:black;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+  
+  .menu-list a:hover {
+    background-color:#DAB30A ;
+    
+  }
+
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0c300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .menu-list li:hover .submenu {
+    display: block; 
+  }
+ 
+  .submenu li {
+    border-bottom: 1px solid red;
+  }
+    .submenu a {
+        padding: 10px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      
+      .submenu a:hover {
+        background-color: #777;
+      }
+
+      
+/* fin de la barre de navigation*/
+
+/* Debut visite florence */
+.p1 {
+   bottom: 20px;
+    max-width: 100%;
+    height: 75%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-image: url('fond22.jpg') ;
+    background-position: center; /* Centrez l'image dans la div */
+    text-align: center; /* Centrez le texte horizontalement */
+    padding: 20px;
+
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+h1.visite {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    font-family: Inter;
+    
+    
+}
+
+
+/* fond rose derriere le texte de florance  */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background {
+   
+    padding: 20px;
+    text-align: center;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+.rose {
+    background-color: #C7A8A8; 
+}
+.gris {
+    background-color: #CAC0C0;
+}
+.grisclaire {
+  background-color: #E3E3E3;
+}
+.jaune{
+  background-color: #D7CDAB; 
+}
+.jauneclaire {
+  background-color: #E7E3D5; 
+}
+h2.t1 {
+    color: #333;
+    font-size: 48px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+p.t1 {
+  text-align: left;
+    margin: 0;
+    font-size: 34px;
+    line-height: 2;
+}
+
+
+/* Footer */
+.container {
+  padding: 20px;
+  height: auto;
+  display: flex;
+  background-color: #CEB14A ;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur un petit écran */
+  
+}
+
+/*fleche pour remonter */
+.fleche-remonter {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #f0c300;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fleche-remonter:hover {
+    background-color: #DAB30A;
+}
+
+/* Affiche la flèche uniquement lorsqu'il y a du défilement */
+body {
+    scroll-behavior: smooth;
+}
+
+body:hover .fleche-remonter,
+body:focus .fleche-remonter {
+    display: block;
+}
+
+
+
+
+
+div.vertical{
+display: flex;
+flex-direction: column;
+
+}
+
+
+div.horizontal{
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center;
+ 
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 20px;
+  }
+
+
+  .flex-item {
+    max-width: 25%; /* Chaque élément occupe 25% de l'espace */
+    margin-bottom: 20px; /* Espace entre les éléments */
+    box-sizing: border-box;
+  }
+
+ .listplate {
+  display: flex;
+  justify-content: space-between; 
+ }
+
+
+ .horizontal a {
+  position: relative;
+  margin-right: 30px;
+  justify-content: space-between; 
+}
+
+.bulle {
+
+padding-top:  2%;
+ padding: 5% ;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 2% 10% 2% 10%;
+
+
+}
+
+.gauche{
+  margin-left: 30px;
+  float: left;
+}
+.droite{
+  margin-right: 30px;
+  float: right;
+}
